@@ -1,0 +1,17 @@
+{% extends 'third/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12" style="margin-top:20px">
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.address }}</p>
+      <p>
+        <a href="{% url 'restaurant-delete' %}?id={{ item.id }}">
+          <button class="btn btn-danger">삭제하기</button>
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -7,7 +7,7 @@
             <h3>{{ item.name }}</h3>
             <p>{{ item.address }}</p>
             <p>
-                <a href="{% url 'restaurant-delete' %}?id={{ item.id }}">
+                <a href="{% url 'restaurant-delete' id=item.id %}">
                     <button class="btn btn-danger">삭제하기</button>
                 </a>
             </p>

@@ -34,6 +34,7 @@
                     {% if restaurants.has_next %}
                         <a href="?page={{ restaurants.next_page_number }}">{{ restaurants.next_page_number }}</a>
                         {% if restaurants.next_page_number < restaurants.paginator.num_pages %}
+                        ...
                         <a href="?page={{ restaurants.paginator.num_pages }}">{{ restaurants.paginator.num_pages }}</a>
                         {% endif %}
                     {% endif %}
